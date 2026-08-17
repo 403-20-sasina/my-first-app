@@ -86,4 +86,4 @@ if st.session_state.get("is_ended", False):
     show_result_dialog(ans1, ans2)
 
 st.divider()
-  st.write("นางสาวศศินา เดชเสน เลขที่ 20 ม.4/3")
+st.write("นางสาวศศินา เดชเสน เลขที่ 20 ม.4/3")
