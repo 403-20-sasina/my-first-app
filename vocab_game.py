@@ -72,20 +72,25 @@ st.divider()
 
 ans1 = st.text_input(
     "ข้อ 1: An `a _ _ l e` a day keeps the doctor away. 🍎",
-    key="ans1_val,
+    value=st.session_state.ans1_val,
 )
 ans2 = st.text_input(
     "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
-    key="ans2_val,
+    value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
     "ข้อ 3: A five-member K-pop idol group from HYPE Entertrainment `C_ _ t i _`. 👓",
-    key="ans3_val,  
+    value=st.session_state.ans3_val,  
 )
 ans4 = st.text_input(
     "ข้อ 4: A four-member K-pop idol group from J-park Entertrainment `L n _ s _ o _`. 📱",
-    key="ans4_val, 
+    value=st.session_state.ans4_val, 
 )
+st.session_state.ans1_val = ans1
+st.session_state.ans2_val = ans2
+st.session_state.ans3_val = ans3
+st.session_state.ans4_val = ans4
+
 
 if "start" in st.session_state and not st.session_state.get("is_ended", False):
     if st.button("📥 ส่งคำตอบ"):
