@@ -17,7 +17,7 @@ def reset_game():
     st.session_state.is_ended = False  # ปิด Dialog
 
 @st.dialog("📊 สรุปผลการเล่นเกม")
-def show_result_dialog(ans1, ans2):
+def show_result_dialog(ans1, ans2, ans3, ans4):
     st.balloons()
     score = 0
 
@@ -72,19 +72,19 @@ st.divider()
 
 ans1 = st.text_input(
     "ข้อ 1: An `a _ _ l e` a day keeps the doctor away. 🍎",
-    value = st.session_state.ans1_val,
+    "value = st.session_state.ans1_val,"
 )
 ans2 = st.text_input(
     "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
-    value = st.session_state.ans2_val,
+    "value = st.session_state.ans2_val,"
 )
 ans3 = st.text_input(
     "ข้อ 3: A five-member K-pop idol group from HYPE Entertrainment `C_ _ t i _`. 👓",
-    value = st.session_state.ans3_val,
+    "value = st.session_state.ans3_val,"
 )
 ans4 = st.text_input(
     "ข้อ 4: A four-member K-pop idol group from J-park Entertrainment `L n _ s _ o _`. 📱",
-    value = st.session_state.ans4_val,
+    "value = st.session_state.ans4_val,"
 )
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
