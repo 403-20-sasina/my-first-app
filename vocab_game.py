@@ -78,10 +78,6 @@ ans2 = st.text_input(
     "ข้อ 2: Cats love to eat `f _ s h`. 🐟",
     value= st.session_state.ans2_val,
 )
-ans3 = st.text_input(
-    "ข้อ 3: A five-member K-pop idol group from HYPE Entertrainment `C_ _ t i _`. 👓",
-    value= st.session_state.ans3_val,
-)
 ans4 = st.text_input(
     "ข้อ 4: A four-member K-pop idol group from J-park Entertrainment `L n _ s _ o _`. 📱",
     value= st.session_state.ans4_val,
