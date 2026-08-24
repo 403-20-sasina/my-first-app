@@ -42,13 +42,13 @@ def show_result_dialog(ans1, ans2, ans3, ans4):
     else:
         st.error(f"❌ ข้อ 2: ยังไม่ถูกต้อง (คุณตอบ '{u_ans2}')")
 
-    if u_ans3 == "Cortis":
+    if u_ans3 == "cortis":
         st.success("✅ ข้อ 3: ถูกต้อง")
         score += 1
     else:
         st.error(f"❌ ข้อ 3: ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
         
-    if u_ans4 == "Lngshot":
+    if u_ans4 == "lngshot":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
@@ -83,11 +83,11 @@ ans2 = st.text_input(
     value=st.session_state.ans2_val,
 )
 ans3 = st.text_input(
-    "ข้อ 3: A five-member K-pop idol group from HYPE Entertrainment `C_ _ t i _`. 👓",
+    "ข้อ 3: A five-member K-pop idol group from HYPE Entertrainment `c _ _ t i _`. 👓",
     value=st.session_state.ans3_val,  
 )
 ans4 = st.text_input(
-    "ข้อ 4: A four-member K-pop idol group from J-park Entertrainment `L n _ s _ o _`. 📱",
+    "ข้อ 4: A four-member K-pop idol group from J-park Entertrainment `l n _ s _ o _`. 📱",
     value=st.session_state.ans4_val, 
 )
 st.session_state.ans1_val = ans1
